@@ -1,0 +1,363 @@
+{
+    "window.zoomLevel": 1,
+    "window.title": "${dirty} ${folderPath} 💠 ${activeEditorMedium} 🔷 ${rootName} ",
+    "explorer.autoReveal": true,
+    "explorer.autoCollapse": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.compactFolders": true,
+    "breadcrumbs.enabled": false,
+    "workbench.layoutControl.enabled": true,
+    "editor.mouseWheelScrollSensitivity": ".2", // mac
+    //"editor.mouseWheelScrollSensitivity": 2.5,   // windows
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "workbench.list.mouseWheelScrollSensitivity": ".2", // mac
+    //"workbench.list.mouseWheelScrollSensitivity": 1, // windows
+    "workbench.list.fastScrollSensitivity": 1,
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": false,
+    "workbench.editor.tabSizing": "fit",
+    "workbench.editor.enablePreview": true,
+    "workbench.tree.indent": 20,
+    "workbench.list.openMode": "singleClick",
+    "workbench.editor.wrapTabs": true,
+    "workbench.colorCustomizations": {
+        //"sideBar.background": "#000000",
+        "editorWarning.foreground": "#d8d53488",
+        "editorInfo.foreground": "#3538ff",
+        "editorError.foreground": "#ce392b88",
+        "editorBracketHighlight.foreground1": "#7ec6e3",
+        "editorBracketHighlight.foreground2": "#6fbad8",
+        "editorBracketHighlight.foreground3": "#5b95ac",
+        "editorBracketHighlight.foreground4": "#4c7c8e",
+        "editorBracketHighlight.foreground5": "#3f6876",
+        "editorBracketHighlight.foreground6": "#355764",
+    },
+    "workbench.files.action.focusOpenEditorsView": true,
+    "editor.suggestSelection": "first",
+    "editor.minimap.enabled": false,
+    "editor.guides.indentation": true,
+    "editor.accessibilitySupport": "off",
+    "editor.lightbulb.enabled": false,
+    "editor.trimAutoWhitespace": false,
+    "editor.scrollbar.verticalScrollbarSize": 20,
+    "editor.cursorSmoothCaretAnimation": false,
+    "editor.formatOnSave": true,
+    "editor.tabCompletion": "on",
+    "editor.quickSuggestionsDelay": 0,
+    // "editor.fontSize": 12,
+    // "editor.letterSpacing": ".5",
+    "editor.fontSize": 11.7,
+    "editor.fontFamily": "Fira Code",
+    "editor.letterSpacing": ".2",
+    "editor.lineHeight": 16,
+    //"editor.fontWeight": "400",
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "same",
+    "editor.glyphMargin": true,
+    "editor.lineDecorationsWidth": 0,
+    "editor.showFoldingControls": "always",
+    "editor.detectIndentation": false,
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "editor.hover.delay": 400,
+    "editor.occurrencesHighlight": false,
+    "editor.showUnused": true,
+    "editor.language.brackets": [
+        [
+            24
+        ]
+    ],
+    "editor.language.colorizedBracketPairs": [
+        [
+            "[",
+            "]"
+        ],
+        [
+            "(",
+            ")"
+        ],
+        [
+            "{",
+            "}"
+        ]
+    ],
+    "editor.matchBrackets": "near",
+    "editor.guides.highlightActiveBracketPair": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+    "editor.snippetSuggestions": "top",
+    //"editor.suggest.snippetsPreventQuickSuggestions": true,
+    // "editor.suggest.filterGraceful": false,
+    // "editor.suggest.preview": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.codeLens": true,
+    "diffEditor.codeLens": false,
+    "terminal.integrated.profiles.windows": {
+        "Git Bash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+        },
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.fontFamily": "Fira Code, Droid Sans Mono Slashed, Source Code Pro, monospace",
+    "terminal.integrated.fontSize": 11,
+    "search.useParentIgnoreFiles": true,
+    "search.useGlobalIgnoreFiles": true,
+    "scss.showErrors": true,
+    "emmet.excludeLanguages": [
+        "typescriptreact",
+        "javscriptreact",
+        "javscript",
+        "typescript"
+    ],
+    // GOLANG:
+    // "go.lintTool": "gometalinter",
+    //"go.useLanguageServer": true,
+    "go.formatTool": "goimports",
+    "go.lintFlags": [
+        //"--disable-all",
+        "--enable=golint",
+        "--exclude=exported (const|type|method|function) [\\w.]+ should have comment (\\(or a comment on this block\\) )?or be unexported",
+        "--exclude=don't use ALL_CAPS in Go names; use CamelCase",
+        //"--exclude=(func|const|struct field|) \\w+ should be \\w+"
+    ],
+    "go.languageServerExperimentalFeatures": {
+        "diagnostics": false
+    },
+    //exludes files & folders in search indexing
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/build": true,
+        "**/env": true,
+        "**/venv": true
+    },
+    //exludes files & folders for watcher service
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/build": true,
+        "**/env/**": true,
+        "**/venv/**": true,
+        "env-*": true
+    },
+    "files.trimTrailingWhitespace": true,
+    // Disable git annoyingness
+    "autoimport.autoComplete": true,
+    // "standard.enable": true,
+    // "standard.options": {
+    //     "autoFixOnSave": true
+    // },
+    // JAVASCRIPT/TYPESCRIPT
+    "eslint.validate": [
+        "javascript",
+        "typescriptreact",
+        "typescript"
+    ],
+    "typescript.disableAutomaticTypeAcquisition": false,
+    "typescript.suggest.paths": false,
+    "javascript.validate.enable": true,
+    "typescript.validate.enable": false,
+    "typescript.autoImportSuggestions.enabled": true,
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true,
+    "javascript.suggest.alwaysAllWords": false,
+    "typescript.suggest.alwaysAllWords": false,
+    "javascript.suggest.completeFunctionCalls": false,
+    "typescript.suggest.completeFunctionCalls": false,
+    "javascript.updateImportsOnFileMove.enabled": "prompt",
+    "typescript.updateImportsOnFileMove.enabled": "prompt",
+    "javascript.autoClosingTags": false,
+    "typescript.autoClosingTags": false,
+    "javascript.inlayHints.parameterNames": "none",
+    "typescript.inlayHints.parameterNames": "none",
+    "javascript.inlayHints.variableTypes.enabled": false,
+    "typescript.inlayHints.variableTypes.enabled": false,
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true,
+            "source.sortImports": true
+        },
+        "editor.foldingStrategy": "indentation",
+        //"editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true,
+            "source.sortImports": true
+        },
+        //"editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true,
+            "source.sortImports": true
+        },
+        "editor.foldingStrategy": "indentation",
+        //"editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "javascript.suggest.completeJSDocs": true,
+    "typescript.suggest.completeJSDocs": true,
+    "docthis.includeTypes": true,
+    "docthis.includeDescriptionTag": true,
+    "docthis.includeMemberOfOnClassMembers": false,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[css]": {
+        "editor.formatOnSave": false
+    },
+    "[scss]": {
+        "editor.formatOnSave": false,
+        "editor.wrappingStrategy": "advanced",
+        "editor.trimAutoWhitespace": false,
+        "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+    },
+    "[html]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[react]": {
+        "editor.formatOnSave": false,
+    },
+    "jsdoc-generator": {
+        "descriptionPlaceholder": "",
+        "author": "",
+        "includeDate": false,
+        "includeTime": false,
+    },
+    "prettier.tabWidth": 4,
+    "beautify.options": {
+        "preserve_newlines": true,
+        "max_preserve_newlines": 2,
+        "space_in_empty_paren": true
+    },
+    "extensions.ignoreRecommendations": true,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Default",
+    "[xml]": {
+        "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+    },
+    "go.useLanguageServer": true,
+    "tabnine.experimentalAutoImports": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "[c]": {
+        "editor.tabSize": 4,
+        "editor.autoIndent": "full",
+        "editor.formatOnSave": true,
+        //"editor.defaultFormatter": "ms-vscode.cpptools"
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[cpp]": {
+        "editor.tabSize": 4,
+        "editor.autoIndent": "full",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+        //"editor.defaultFormatter": "xaver.clang-format"
+    },
+    "clang-format.executable": "/opt/homebrew/bin/clang-format",
+    "C_Cpp.clang_format_path": "/opt/homebrew/bin/clang-format",
+    //"clang-format.executable": "C:/Program Files/LLVM/bin/clang-format.exe",
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "cmake.configureOnOpen": true,
+    "redhat.telemetry.enabled": false,
+    "scm.diffDecorationsGutterVisibility": "hover",
+    "scm.diffDecorations": "none",
+    "gitlens.advanced.messages": {
+        "suppressGitDisabledWarning": true,
+        "suppressGitMissingWarning": true
+    },
+    // "git.path": null,
+    // "git.autofetch": false,
+    "git.mergeEditor": false,
+    "git.openDiffOnClick": false,
+    "git.requireGitUserConfig": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "clangd.detectExtensionConflicts": false,
+    "arduino.path": "C:\\Users\\Ryan Weiss\\AppData\\Local\\Arduino15",
+    "arduino.useArduinoCli": true,
+    "arduino.logLevel": "verbose",
+    "debug.onTaskErrors": "showErrors",
+    "workbench.colorTheme": "Dark Space Theme",
+    //"platformio-ide.useBuiltinPIOCore": false,
+    //"platformio-ide.customPATH": "C:\\esp\\.platformio\\penv\\Scripts",
+    /*
+    "postcssSorting.config": {
+        "order": [
+            "at-rules",
+            "custom-properties",
+            "dollar-variables",
+            "declarations",
+            "at-rules"
+        ],
+        "properties-order": [
+            "@include",
+            "display",
+            "flex",
+            "flex-direction",
+            "flex-wrap",
+            "justify-content",
+            "align-items",
+            "position",
+            "z-index",
+            "object-fit",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "height",
+            "min-height",
+            "max-height",
+            "width",
+            "min-width",
+            "max-width",
+            "overflow",
+            "overflow-x",
+            "overflow-y",
+            "margin",
+            "padding",
+            "font",
+            "font-family",
+            "font-size",
+            "font-weight",
+            "text-transform",
+            "text-align",
+            "color",
+            "background",
+            "transition",
+            "border"
+        ]
+    },
+    */
+}
