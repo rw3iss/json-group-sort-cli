@@ -32,6 +32,7 @@ prog
 
             // gather the default options with these overrides
             const opts = getDefaultOptions(config);
+            console.log(`Options:`, opts)
 
             // now take the cli params as final preference:
             if (o.c) opts.config = o.c;

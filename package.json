@@ -1,19 +1,26 @@
 {
     "name": "json-group-sort-cli",
     "version": "1.0.0",
-    "description": "Takes any input json file, groups duplicate entries by key prefix, ie \"key\" or \"key.something\" and breaks them apart, groups them into the \"key\", then child properties the same, and then it sorts it all. A config file can be used to specify group and sort options.",
+    "description": "Takes any input json file, optionally breaks apart keys by a given delimeter, ie. turns { \"keya.keyb\": val } into { keya: { keyb: val }}. This will also group all of the same prefixed entries under one key. It will finally then sort all the entries alphabetically, or according to the configured sorting options.",
     "author": "Ryan Weiss (rw3iss@gmail.com)",
     "license": "ISC",
     "main": "index.js",
     "type": "commonjs",
     "bin": {
-        "json-group-sort": "index.js"
+        "json-group-sort": "node index.js"
     },
     "scripts": {
-        "test": "rm -rf test/out && node index.js -i=test/settings.json -o=test/out"
+        "test": "rm -rf test/out && node index.js",
+        "test-cli": "rm -rf test/out && node index.js -i=test/settings.json -o=test/out"
     },
     "dependencies": {
         "caporal": "^1.4.0",
         "comment-json": "^4.2.3"
+    },
+    "json-group-sort": {
+        "input": "test/settings.json",
+        "output": "out",
+        "sortKeys": "window, explorer, workbench, editor, terminal, [typescript], typescript, [javascript], javascript, [javascriptreact], javascriptreact, [html], html, [scss], scss, [css], css, [react], [json], [jsonc], [xml], xml, eslint, git, gitlens, files, search, [cpp], cpp, [c], c, C_Cpp, clang-format, clangd, cmake, arduino, go",
+        "keyDelimeter": "."
     }
 }
